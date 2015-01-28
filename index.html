@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub</title>
+</head>
+<body>
+
+  <div class="avatar-info">
+    <!-- <img src="" alt="">
+    <h3 class="real-name"></h3>
+    <p class="username"></p> -->
+  </div>
+  <ul class="repositories">
+
+  </ul>
+
+
+
+  <script type="text/javascript" src="bower_components/underscore/underscore.js"></script>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+
+  <script type="text/template" class="avatar-info-template">
+  </script>
+  <script type="text/template" data-template-name="repo">
+    <li>
+      <%= name %>
+      <%= pushed_at %>
+      <%= language %>
+      <%= stargazers_count %>
+      <%= forks_count %>
+      <%= stargazers_url %>
+      <%= forks_url %>
+      <%= url %>
+    </li>
+  </script>
+  <script type="text/javascript" src="scripts/token.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
